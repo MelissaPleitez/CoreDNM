@@ -10,3 +10,11 @@ body{
     background-size: 13px 15px;
     background-position: 0.30rem center;
   }
+
+  #borde{
+    border: 1px solid #313945;
+  }
+  #botonColor{
+    background-color:#313945;
+    color: white;
+  }

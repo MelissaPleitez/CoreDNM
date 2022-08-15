@@ -3,3 +3,98 @@
     background-size: 13px 15px;
     background-position: 0.30rem center;
   }
+
+  .my-custom-scrollbar {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+    /* search bar */
+
+    .height{
+
+        height: 100vh;
+    }
+    
+    .form{
+    
+        position: relative;
+    }
+    
+    .form .fa-search{
+    
+        position: absolute;
+        top:20px;
+        left: 20px;
+        color: black;
+    
+    }
+    
+    .form span{
+    
+        position: absolute;
+        right: 17px;
+        top: 13px;
+        padding: 2px;
+        border-left: 1px solid #161616;
+    
+    }
+    
+   
+    
+    .form-input{
+    
+        height: 55px;
+        text-indent: 33px;
+        border-radius: 20px;
+    }
+    
+    .form-input:focus{
+    
+        box-shadow: none;
+        border:2px solid black;
+    }
+
+ /* Margen para el filtro*/
+    #espacio{
+        margin-left: 40px;
+    }
+
+     /* Cambiar el color del scroll */
+
+    body::-webkit-scrollbar {
+        width: 12px;               
+      }
+      
+      body::-webkit-scrollbar-track {
+        background: white;      
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background-color: white;    
+        border-radius: 20px;       
+        border: 3px solid white;  
+      }
+
+      .table-wrapper-scroll-y::-webkit-scrollbar {
+        width: 16px; 
+      }
+
+      .table-wrapper-scroll-y::-webkit-scrollbar-track {
+        background: rgb(238, 236, 234);        
+      }
+      
+      .table-wrapper-scroll-y::-webkit-scrollbar-thumb {
+        background-color: #313945;   
+        border-radius: 20px;       
+        border: 3px solid white; 
+      }
+
+      .BotonColor{
+        background-color: #313945;
+        color: white;
+    }

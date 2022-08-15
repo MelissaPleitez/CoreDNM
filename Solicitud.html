@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Solicitud</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
     crossorigin="anonymous"
   />
+  <script src="https://kit.fontawesome.com/dd4b7c11a1.js" crossorigin="anonymous"></script>
+  <link href="/Solicitudes.css" rel="stylesheet"/>
 </head>
 <body>
     <!--SIDEBAR:-->
@@ -24,8 +26,8 @@
       <p class="text-center"><span class="px-3 mb-3"><img src="/assets/iconosDNM/Cero2.svg"></span>Solicitudes</p>
       <p class="text-center"><span class="px-4 mb-3"><img src="/assets/iconosDNM/primero.svg"></span>Cotizaciones</p>
       <p class="text-center"><span class="px-4 mb-3"><img src="/assets/iconosDNM/segundo.svg"></span>Laboratorios</p>
-      <div class="btn-group d-flex justify-content-center me-5">
-        <button class="btn btn-link dropdown-toggle px-3 text-decoration-none text-white text-center"data-bs-toggle="dropdown" aria-expanded="false">
+      <div id="espacio" class="btn-group d-flex justify-content-center">
+        <button  class="btn btn-link dropdown-toggle px-3 text-decoration-none text-white text-center"data-bs-toggle="dropdown" aria-expanded="false">
           <span class="px-3"><img src="/assets/iconosDNM/tercero.svg"></span>
           Administracion
         </button>
@@ -54,7 +56,7 @@
                     <div class="text-center py-5">
                         <h3>Detalles de solicitud</h3>
                     </div>
-                    <div >
+                    <div id="centrar">
                         <h4 class="mx-4">ID de la solicitud: A1537</h4>
                         <h5 class="mx-5 py-5">Informacion del solicitante:</h4>
                          <p class="mx-5">Nombre del solicitante: Juan Diaz</p>
@@ -66,12 +68,12 @@
                          <h5 class="mx-5 py-5">Descripcion:</h5>
                          <p class="col-10 col-md-6 text-center mx-5">Es un metabolito de la fenacetina. Sus acciones analgésicas y antipiréticas son semejantes a las del ácido acetilsalicílico y, aunque no posee la potencia antiinflamatoria de los salicilatos, se ha utilizado satisfactoriamente en aquellos pacientes que presentan alergia o intolerancia a la aspirina. Desde el punto de vista clínico ha demostrado una acción antipirética y analgésica rápida y eficaz en lactantes, niños, adolescentes y adultos.</p>
                     </div>
-                    <div class="btn-group-vertical d-grid gap-2 col-3 mt-3 " role="group" aria-label="Vertical button group">
+                    <div class="btn-group-vertical d-grid gap-4 col-6 mt-3 espacioBoton" role="group" aria-label="Vertical button group">
                         <h5 class="mx-5 py-3">Documentos Adjuntos:</h5>
                         <div class="input-group mx-5">
                             <input  type="file" class="form-control"/>
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-primary rounded-pill">
+                            <div class="input-group-append espacioBoton ">
+                                <button type="button" class="btn colorBoton rounded-pill">
                                    ver
                                 </button>
                                 <button type="reset" class="btn btn-danger rounded-pill">
@@ -81,8 +83,8 @@
                         </div>
                         <div class="input-group mx-5">
                             <input  type="file" class="form-control"/>
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-primary rounded-pill">
+                            <div class="input-group-append espacioBoton">
+                                <button type="button" class="btn colorBoton rounded-pill">
                                    ver
                                 </button>
                                 <button type="reset" class="btn btn-danger rounded-pill">
@@ -92,8 +94,8 @@
                         </div>
                         <div class="input-group mx-5">
                             <input  type="file" class="form-control"/>
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-primary rounded-pill">
+                            <div class="input-group-append espacioBoton">
+                                <button type="button" class="btn colorBoton rounded-pill">
                                    ver
                                 </button>
                                 <button type="reset" class="btn btn-danger rounded-pill">
@@ -103,23 +105,23 @@
                         </div>
                     </div>s
                 </div>
-                <div class="d-flex align-items-center">
-                    <div class="d-grid gap-2 col-3 mt-3 d">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-grid gap-2 col-3 mt-3 d espacioBoton">
                         <button class="btn btn-success rounded-pill py-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Aceptar</button> 
                     </div>
-                    <div class="d-grid gap-2 col-3 mt-3 d">
+                    <div class="d-grid gap-2 col-3 mt-3 d espacioBoton">
                         <button class="btn btn-warning rounded-pill py-4" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo" >Enviar Observacion</button> 
                     </div>
-                    <div class="d-grid gap-2 col-3 mt-3 d">
+                    <div class="d-grid gap-2 col-3 mt-3 d espacioBoton">
                         <button class="btn btn-danger rounded-pill py-4" data-bs-toggle="modal" data-bs-target="#exampleModal3">Rechazar</button>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mx-4">
-                    <div class="d-grid gap-2 col-3 mt-3 d">
+                    <div class="d-grid gap-2 col-3 mt-3 d espacioBoton3">
                         <button class="border border-2 btn btn-ligh rounded-pill py-4" >Atras</button> 
                     </div>
-                    <div class="d-grid gap-2 col-3 mt-3 d">
-                        <button class="btn btn-primary rounded-pill py-4 ">Cotizar</button>
+                    <div class="d-grid gap-2 col-3 mt-3 d espacioBoton2">
+                        <button class="btn colorBoton rounded-pill py-4 ">Cotizar</button>
                     </div>
                 </div>
                 
@@ -141,7 +143,7 @@
                     <h4>¿Esta seguro de que quieres aceptar esta solicitud?</h4>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Atras</button>
+                      <button  type="button" class="btn colorBoton" data-bs-dismiss="modal">Atras</button>
                       <button type="button" class="btn btn-ligh">Aceptar</button>
                     </div>
                   </div>
@@ -152,31 +154,31 @@
 <!--TARJETA DEL BOTON ENVIAR OBSERVACIONES:-->
 
 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel2">Enviar Observaciones</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Adjunte su documento aqui:</label>
-            <input type="file" class="form-control" id="message-text"></input>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel2">Enviar Observaciones</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Descripcion</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+              <label for="message-text" class="col-form-label">Adjunte su documento aqui:</label><br>
+              <img src="/assets/files.svg"/>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn colorBoton" data-bs-dismiss="modal">Atras</button>
+          <button type="button" class="btn btn-light">Enviar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 <!--TARJETA DEL BOTON RECHAZAR:-->
 
@@ -191,8 +193,8 @@
         <h4>¿Esta seguro de que quieres rechazar esta solicitud?</h4>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Atras</button>
-          <button type="button" class="btn btn-ligh">Rechazar</button>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Atras</button>
+          <button type="button" class="btn btn-danger">Rechazar</button>
         </div>
       </div>
     </div>
